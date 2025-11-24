@@ -270,13 +270,6 @@ We welcome contributions to improve the US Visa Prediction System! Here's how yo
 - Add docstrings to functions and classes
 - Include unit tests for new features
 - Update documentation as needed
-
-### Issues & Support
-
-- **GitHub Issues**: Report bugs and request features
-- **Discussions**: Ask questions and share ideas
-- **Email**: Contact the maintainer at mdislam0996@gmail.com
-
 ---
 
 ## 📄 License
