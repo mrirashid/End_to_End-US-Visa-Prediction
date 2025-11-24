@@ -36,4 +36,4 @@ class ModelEvaluationArtifact:
     changed_accuracy:float
     s3_model_path:str 
     trained_model_path:str
-    
+      
