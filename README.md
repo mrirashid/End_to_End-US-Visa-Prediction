@@ -1,29 +1,19 @@
 # US Visa Status Prediction System
-
-## Project Overview
-
 The **US Visa Status Prediction System** is an end-to-end machine learning project that predicts the approval status of US visa applications based on various applicant and employer characteristics. This comprehensive system includes data ingestion, validation, transformation, model training, evaluation, and deployment components with a user-friendly web interface.
 
 The project implements MLOps best practices with modular architecture, automated pipelines, data drift monitoring, and cloud deployment capabilities. It serves as a complete solution for predicting visa approval outcomes, helping applicants understand their chances and enabling data-driven decision making.
 
 ---
-
-## 📸 System Screenshots
-
 ### Web Application Interface
 
 <img width="1358" height="945" alt="Image" src="https://github.com/user-attachments/assets/b1da6a43-bc0d-4e3a-8630-b74ee1ef411d" />
 _The main prediction interface where users can input their details to get visa status predictions_
 
-
-
-_Results display showing the predicted visa status with confidence scores_
-
 ---
 
 ## 📊 Dataset Source
 
-The project uses the **EasyVisa Dataset** containing historical US visa application records with the following characteristics:
+The project uses the **EasyVisa Dataset** from kaggle containing historical US visa application records with the following characteristics:
 
 - **Dataset**: EasyVisa.csv (located in `Dataset/` folder)
 - **Records**: Thousands of visa application cases
@@ -41,7 +31,6 @@ The project uses the **EasyVisa Dataset** containing historical US visa applicat
 ---
 
 ## 🛠️ Technologies Used
-
 ### **Core Technologies**
 
 - **Python 3.8+**: Primary programming language
@@ -50,7 +39,6 @@ The project uses the **EasyVisa Dataset** containing historical US visa applicat
 - **Uvicorn**: ASGI server for deployment
 
 ### **Data Processing & Analysis**
-
 - **Pandas**: Data manipulation and analysis
 - **NumPy**: Numerical computing
 - **Matplotlib & Seaborn**: Data visualization
@@ -58,7 +46,6 @@ The project uses the **EasyVisa Dataset** containing historical US visa applicat
 - **SciPy**: Scientific computing
 
 ### **Machine Learning**
-
 - **Scikit-learn**: ML algorithms and preprocessing
 - **XGBoost**: Gradient boosting framework
 - **CatBoost**: Categorical feature boosting
@@ -72,14 +59,12 @@ The project uses the **EasyVisa Dataset** containing historical US visa applicat
 - **Neuro-MF**: ML framework utilities
 
 ### **Database & Cloud**
-
 - **MongoDB**: NoSQL database for data storage
 - **PyMongo**: MongoDB Python driver
 - **AWS S3**: Cloud storage (via Boto3)
 - **Docker**: Containerization
 
 ### **Development Tools**
-
 - **From-root**: Path management utilities
 - **Python-multipart**: File upload handling
 - **Logging**: Built-in logging system
