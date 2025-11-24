@@ -1,4 +1,4 @@
-# 🇺🇸 US Visa Status Prediction System
+# US Visa Status Prediction System
 
 ## Project Overview
 
@@ -12,13 +12,10 @@ The project implements MLOps best practices with modular architecture, automated
 
 ### Web Application Interface
 
-![US Visa Predictor Interface](https://via.placeholder.com/800x600/4F46E5/white?text=US+Visa+Prediction+Web+App)
-
+<img width="1358" height="945" alt="Image" src="https://github.com/user-attachments/assets/b1da6a43-bc0d-4e3a-8630-b74ee1ef411d" />
 _The main prediction interface where users can input their details to get visa status predictions_
 
-### Prediction Results
 
-![Prediction Results](https://via.placeholder.com/800x400/059669/white?text=Prediction+Results+Dashboard)
 
 _Results display showing the predicted visa status with confidence scores_
 
@@ -319,29 +316,5 @@ copies or substantial portions of the Software.
 
 ---
 
-## 📞 Contact
-
-**MD Rashidul Islam**
-
-- 📧 Email: mdislam0996@gmail.com
-- 🐱 GitHub: [@mrirashid](https://github.com/mrirashid)
-- 🔗 LinkedIn: [MD Rashidul Islam](https://linkedin.com/in/mdislam0996)
-
----
-
-## 🙏 Acknowledgments
-
-- **EasyVisa Dataset**: For providing the comprehensive visa application data
-- **Open Source Community**: For the amazing tools and libraries used
-- **Contributors**: Thanks to all who have contributed to this project
-- **Machine Learning Community**: For research and methodologies
-
----
-
-<div align="center">
-
-**⭐ If you found this project helpful, please give it a star! ⭐**
-
-Made with ❤️ by [MD Rashidul Islam](https://github.com/mrirashid)
 
 </div>
