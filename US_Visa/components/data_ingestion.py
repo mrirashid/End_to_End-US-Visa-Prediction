@@ -1,6 +1,6 @@
 import os
 import sys
-
+import pandas as pd
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 
@@ -9,6 +9,7 @@ from US_Visa.entity.artifact_entity import DataIngestionArtifact
 from US_Visa.exception import USvisaException
 from US_Visa.logger import logging
 from US_Visa.data_access.usvisa_data import USvisaData
+from from_root import from_root
 
 
 class DataIngestion:
@@ -33,8 +34,18 @@ class DataIngestion:
         try:
             logging.info(f"Exporting data from mongodb")
             usvisa_data = USvisaData()
-            dataframe = usvisa_data.export_collection_as_dataframe(collection_name=
-                                                                   self.data_ingestion_config.collection_name)
+            dataframe = usvisa_data.export_collection_as_dataframe(
+                collection_name=self.data_ingestion_config.collection_name
+            )
+            if dataframe is None or dataframe.empty:
+                logging.warning("MongoDB returned empty dataset; falling back to local CSV.")
+                local_csv = os.path.join(from_root(), "Dataset", "EasyVisa.csv")
+                if not os.path.exists(local_csv):
+                    raise USvisaException(
+                        f"No data available: MongoDB empty and fallback CSV not found at {local_csv}",
+                        sys,
+                    )
+                dataframe = pd.read_csv(local_csv)
             logging.info(f"Shape of dataframe: {dataframe.shape}")
             feature_store_file_path  = self.data_ingestion_config.feature_store_file_path
             dir_path = os.path.dirname(feature_store_file_path)
